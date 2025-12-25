@@ -1,8 +1,7 @@
 import app from './firebase'
 import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { Auth } from './components/auth'
+import './index.css'
 
 function App() {
 
@@ -10,6 +9,14 @@ function App() {
       console.log("firebase app: ", app);
     }, []);
 
+    // lets create something with our tailwindcss
+  return (
+    <div className="App">
+      < Auth />
+
+      
+    </div>
+  );
 }
 
 
